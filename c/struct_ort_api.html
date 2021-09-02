@@ -24,7 +24,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="ONNX_Runtime_icon.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="ONNX_Runtime_logo - Docs.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">OnnxRuntime
    </div>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('struct_ort_api.html',''); initResizabl
 
 <p><code>#include &lt;<a class="el" href="onnxruntime__c__api_8h_source.html">onnxruntime_c_api.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Error Handling</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader">OrtStatus</h2></td></tr>
 <tr class="memitem:ab3f31bf5a89fae003e5f57f27c1503f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#ab3f31bf5a89fae003e5f57f27c1503f0">CreateStatus</a> )(<a class="el" href="group___global.html#gabab5349c294603a9eac437fdafd40a3d">OrtErrorCode</a> code, const char *msg) __attribute__((nonnull))</td></tr>
 <tr class="memdesc:ab3f31bf5a89fae003e5f57f27c1503f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an OrtStatus from a null terminated string.  <a href="struct_ort_api.html#ab3f31bf5a89fae003e5f57f27c1503f0">More...</a><br /></td></tr>
 <tr class="separator:ab3f31bf5a89fae003e5f57f27c1503f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -104,6 +104,8 @@ $(document).ready(function(){initNavTree('struct_ort_api.html',''); initResizabl
 <tr class="memitem:a8b5cc409efb4d7014998e169de144b7d"><td class="memItemLeft" align="right" valign="top">const char *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a8b5cc409efb4d7014998e169de144b7d">GetErrorMessage</a> )(const <a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *status) __attribute__((nonnull))</td></tr>
 <tr class="memdesc:a8b5cc409efb4d7014998e169de144b7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get error string from OrtStatus.  <a href="struct_ort_api.html#a8b5cc409efb4d7014998e169de144b7d">More...</a><br /></td></tr>
 <tr class="separator:a8b5cc409efb4d7014998e169de144b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b21334e290855a585f53d53dda44551"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a9b21334e290855a585f53d53dda44551">ReleaseStatus</a> (<a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *input)</td></tr>
+<tr class="separator:a9b21334e290855a585f53d53dda44551"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">OrtIoBinding</h2></td></tr>
 <tr class="memitem:a1b9f96db9d81810fb5416b10afdaf731"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a1b9f96db9d81810fb5416b10afdaf731">ClearBoundInputs</a> )(<a class="el" href="group___global.html#ga58e534aaa9cdcee02d79ffddced86c93">OrtIoBinding</a> *binding_ptr) __attribute__((nonnull))</td></tr>
@@ -131,6 +133,20 @@ $(document).ready(function(){initNavTree('struct_ort_api.html',''); initResizabl
 <tr class="memdesc:a2fa82193ec64371a05220e869e137622"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the output <a class="el" href="group___global.html#gaab167acf3fe9dabc0195b993fbe7ee7d">OrtValue</a> objects from an <a class="el" href="group___global.html#ga58e534aaa9cdcee02d79ffddced86c93">OrtIoBinding</a>.  <a href="struct_ort_api.html#a2fa82193ec64371a05220e869e137622">More...</a><br /></td></tr>
 <tr class="separator:a2fa82193ec64371a05220e869e137622"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">OrtTensorRTProviderOptionsV2</h2></td></tr>
+<tr class="memitem:ae17a8857260554d44bb2b27a67e39020"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#ae17a8857260554d44bb2b27a67e39020">ReleaseTensorRTProviderOptions</a> )(<a class="el" href="group___global.html#ga331177427bd78a813d46a78f78f159a2">OrtTensorRTProviderOptionsV2</a> *input)</td></tr>
+<tr class="memdesc:ae17a8857260554d44bb2b27a67e39020"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release an <a class="el" href="group___global.html#ga331177427bd78a813d46a78f78f159a2">OrtTensorRTProviderOptionsV2</a>.  <a href="struct_ort_api.html#ae17a8857260554d44bb2b27a67e39020">More...</a><br /></td></tr>
+<tr class="separator:ae17a8857260554d44bb2b27a67e39020"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aded45902af604f958176bec4792351c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#aded45902af604f958176bec4792351c0">CreateTensorRTProviderOptions</a> (<a class="el" href="group___global.html#ga331177427bd78a813d46a78f78f159a2">OrtTensorRTProviderOptionsV2</a> **out)</td></tr>
+<tr class="memdesc:aded45902af604f958176bec4792351c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an OrtTensorRTProviderOptionsV2.  <a href="struct_ort_api.html#aded45902af604f958176bec4792351c0">More...</a><br /></td></tr>
+<tr class="separator:aded45902af604f958176bec4792351c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0499e538e565039b4eb2769fdd3b26f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#ad0499e538e565039b4eb2769fdd3b26f">UpdateTensorRTProviderOptions</a> (<a class="el" href="group___global.html#ga331177427bd78a813d46a78f78f159a2">OrtTensorRTProviderOptionsV2</a> *tensorrt_options, const char *const *provider_options_keys, const char *const *provider_options_values, size_t num_keys)</td></tr>
+<tr class="memdesc:ad0499e538e565039b4eb2769fdd3b26f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set options in a TensorRT Execution Provider.  <a href="struct_ort_api.html#ad0499e538e565039b4eb2769fdd3b26f">More...</a><br /></td></tr>
+<tr class="separator:ad0499e538e565039b4eb2769fdd3b26f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a498cf13aa49e240d8c26871cf3f71337"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a498cf13aa49e240d8c26871cf3f71337">GetTensorRTProviderOptionsAsString</a> (const <a class="el" href="group___global.html#ga331177427bd78a813d46a78f78f159a2">OrtTensorRTProviderOptionsV2</a> *tensorrt_options, <a class="el" href="struct_ort_allocator.html">OrtAllocator</a> *allocator, char **ptr)</td></tr>
+<tr class="memdesc:a498cf13aa49e240d8c26871cf3f71337"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get serialized TensorRT provider options string.  <a href="struct_ort_api.html#a498cf13aa49e240d8c26871cf3f71337">More...</a><br /></td></tr>
+<tr class="separator:a498cf13aa49e240d8c26871cf3f71337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">OrtEnv</h2></td></tr>
 <tr class="memitem:a531821ab72d80253b3bc72f9ccf60f5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a531821ab72d80253b3bc72f9ccf60f5c">CreateEnv</a> (<a class="el" href="group___global.html#ga1c0fbcf614dbd0e2c272ae1cc04c629c">OrtLoggingLevel</a> logging_level, const char *logid, <a class="el" href="group___global.html#gaba9072a64b5081cd4d36cca5ef92bd08">OrtEnv</a> **out)</td></tr>
 <tr class="memdesc:a531821ab72d80253b3bc72f9ccf60f5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an OrtEnv.  <a href="struct_ort_api.html#a531821ab72d80253b3bc72f9ccf60f5c">More...</a><br /></td></tr>
@@ -144,6 +160,8 @@ $(document).ready(function(){initNavTree('struct_ort_api.html',''); initResizabl
 <tr class="memitem:a74a22efe6571fe538e60f677654ae01f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a74a22efe6571fe538e60f677654ae01f">DisableTelemetryEvents</a> (const <a class="el" href="group___global.html#gaba9072a64b5081cd4d36cca5ef92bd08">OrtEnv</a> *env)</td></tr>
 <tr class="memdesc:a74a22efe6571fe538e60f677654ae01f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable Telemetry.  <a href="struct_ort_api.html#a74a22efe6571fe538e60f677654ae01f">More...</a><br /></td></tr>
 <tr class="separator:a74a22efe6571fe538e60f677654ae01f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5edc51815e9aeba83516e4fe55ef836a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a5edc51815e9aeba83516e4fe55ef836a">ReleaseEnv</a> (<a class="el" href="group___global.html#gaba9072a64b5081cd4d36cca5ef92bd08">OrtEnv</a> *input)</td></tr>
+<tr class="separator:a5edc51815e9aeba83516e4fe55ef836a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86561944c3521690c38d563f74c70a1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a86561944c3521690c38d563f74c70a1d">CreateEnvWithGlobalThreadPools</a> (<a class="el" href="group___global.html#ga1c0fbcf614dbd0e2c272ae1cc04c629c">OrtLoggingLevel</a> logging_level, const char *logid, const <a class="el" href="group___global.html#ga3a8151bc1daecaae2411fb9a54c01ee9">OrtThreadingOptions</a> *t_options, <a class="el" href="group___global.html#gaba9072a64b5081cd4d36cca5ef92bd08">OrtEnv</a> **out)</td></tr>
 <tr class="memdesc:a86561944c3521690c38d563f74c70a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an OrtEnv.  <a href="struct_ort_api.html#a86561944c3521690c38d563f74c70a1d">More...</a><br /></td></tr>
 <tr class="separator:a86561944c3521690c38d563f74c70a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,12 +172,6 @@ $(document).ready(function(){initNavTree('struct_ort_api.html',''); initResizabl
 <tr class="separator:a31da2849eeda131d85d10f904834ca41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fbd043cddc9a46d33fce55a4733b957"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a5fbd043cddc9a46d33fce55a4733b957">CreateEnvWithCustomLoggerAndGlobalThreadPools</a> (<a class="el" href="group___global.html#ga2a61c1134f2f604095f32d2560630e94">OrtLoggingFunction</a> logging_function, void *logger_param, <a class="el" href="group___global.html#ga1c0fbcf614dbd0e2c272ae1cc04c629c">OrtLoggingLevel</a> logging_level, const char *logid, const struct <a class="el" href="group___global.html#ga3a8151bc1daecaae2411fb9a54c01ee9">OrtThreadingOptions</a> *tp_options, <a class="el" href="group___global.html#gaba9072a64b5081cd4d36cca5ef92bd08">OrtEnv</a> **out)</td></tr>
 <tr class="separator:a5fbd043cddc9a46d33fce55a4733b957"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39b702897cc61157248ffde413b14b9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a39b702897cc61157248ffde413b14b9d">RegisterAllocator</a> (<a class="el" href="group___global.html#gaba9072a64b5081cd4d36cca5ef92bd08">OrtEnv</a> *env, <a class="el" href="struct_ort_allocator.html">OrtAllocator</a> *allocator)</td></tr>
-<tr class="memdesc:a39b702897cc61157248ffde413b14b9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a custom allocator.  <a href="struct_ort_api.html#a39b702897cc61157248ffde413b14b9d">More...</a><br /></td></tr>
-<tr class="separator:a39b702897cc61157248ffde413b14b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafc0689965f283aba9fd21ebbddd09c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#aafc0689965f283aba9fd21ebbddd09c6">UnregisterAllocator</a> (<a class="el" href="group___global.html#gaba9072a64b5081cd4d36cca5ef92bd08">OrtEnv</a> *env, const <a class="el" href="group___global.html#ga088f45e429651ac29b4a9efb4d88571a">OrtMemoryInfo</a> *mem_info)</td></tr>
-<tr class="memdesc:aafc0689965f283aba9fd21ebbddd09c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a custom allocator.  <a href="struct_ort_api.html#aafc0689965f283aba9fd21ebbddd09c6">More...</a><br /></td></tr>
-<tr class="separator:aafc0689965f283aba9fd21ebbddd09c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">OrtSession</h2></td></tr>
 <tr class="memitem:a8e8529eb336bbe2334307c9197891838"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a8e8529eb336bbe2334307c9197891838">CreateSession</a> (const <a class="el" href="group___global.html#gaba9072a64b5081cd4d36cca5ef92bd08">OrtEnv</a> *env, const char *model_path, const <a class="el" href="group___global.html#gaa6c56bcb36e39611481a17065d3ce620">OrtSessionOptions</a> *options, <a class="el" href="group___global.html#ga5220ca3b3f0a31a01a3f15057c35cac6">OrtSession</a> **out)</td></tr>
@@ -197,6 +209,8 @@ $(document).ready(function(){initNavTree('struct_ort_api.html',''); initResizabl
 <tr class="memitem:aae6197279efef5aa794eac94e56c2d70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#aae6197279efef5aa794eac94e56c2d70">SessionGetOverridableInitializerName</a> (const <a class="el" href="group___global.html#ga5220ca3b3f0a31a01a3f15057c35cac6">OrtSession</a> *session, size_t index, <a class="el" href="struct_ort_allocator.html">OrtAllocator</a> *allocator, char **value)</td></tr>
 <tr class="memdesc:aae6197279efef5aa794eac94e56c2d70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get overridable initializer name.  <a href="struct_ort_api.html#aae6197279efef5aa794eac94e56c2d70">More...</a><br /></td></tr>
 <tr class="separator:aae6197279efef5aa794eac94e56c2d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae311be14b0e35ce3ad3bc1418a79d7bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#ae311be14b0e35ce3ad3bc1418a79d7bb">ReleaseSession</a> (<a class="el" href="group___global.html#ga5220ca3b3f0a31a01a3f15057c35cac6">OrtSession</a> *input)</td></tr>
+<tr class="separator:ae311be14b0e35ce3ad3bc1418a79d7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1ed6fb7c562e68ffa8310595f6ad0d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#af1ed6fb7c562e68ffa8310595f6ad0d2">SessionEndProfiling</a> (<a class="el" href="group___global.html#ga5220ca3b3f0a31a01a3f15057c35cac6">OrtSession</a> *session, <a class="el" href="struct_ort_allocator.html">OrtAllocator</a> *allocator, char **out)</td></tr>
 <tr class="memdesc:af1ed6fb7c562e68ffa8310595f6ad0d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">End profiling and return filename of the profile data.  <a href="struct_ort_api.html#af1ed6fb7c562e68ffa8310595f6ad0d2">More...</a><br /></td></tr>
 <tr class="separator:af1ed6fb7c562e68ffa8310595f6ad0d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -277,6 +291,8 @@ $(document).ready(function(){initNavTree('struct_ort_api.html',''); initResizabl
 <tr class="memitem:a56fbbde53eeab444f84985c8b257b9d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a56fbbde53eeab444f84985c8b257b9d3">AddFreeDimensionOverride</a> (<a class="el" href="group___global.html#gaa6c56bcb36e39611481a17065d3ce620">OrtSessionOptions</a> *options, const char *dim_denotation, int64_t dim_value)</td></tr>
 <tr class="memdesc:a56fbbde53eeab444f84985c8b257b9d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override session symbolic dimensions.  <a href="struct_ort_api.html#a56fbbde53eeab444f84985c8b257b9d3">More...</a><br /></td></tr>
 <tr class="separator:a56fbbde53eeab444f84985c8b257b9d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fa11d21f36cbd068a82682ea175d774"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a2fa11d21f36cbd068a82682ea175d774">ReleaseSessionOptions</a> (<a class="el" href="group___global.html#gaa6c56bcb36e39611481a17065d3ce620">OrtSessionOptions</a> *input)</td></tr>
+<tr class="separator:a2fa11d21f36cbd068a82682ea175d774"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65495e1a61a098089f6f987b41535743"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a65495e1a61a098089f6f987b41535743">DisablePerSessionThreads</a> (<a class="el" href="group___global.html#gaa6c56bcb36e39611481a17065d3ce620">OrtSessionOptions</a> *options)</td></tr>
 <tr class="separator:a65495e1a61a098089f6f987b41535743"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10e526645073906dd9c10e29c5bc2bc3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a10e526645073906dd9c10e29c5bc2bc3">AddFreeDimensionOverrideByName</a> (<a class="el" href="group___global.html#gaa6c56bcb36e39611481a17065d3ce620">OrtSessionOptions</a> *options, const char *dim_name, int64_t dim_value)</td></tr>
@@ -313,6 +329,8 @@ $(document).ready(function(){initNavTree('struct_ort_api.html',''); initResizabl
 <tr class="memitem:a667322624add60e555d44c5bbaba60d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a667322624add60e555d44c5bbaba60d3">CustomOpDomain_Add</a> (<a class="el" href="group___global.html#ga571f649a16d7052d4465ceabfdd26161">OrtCustomOpDomain</a> *custom_op_domain, const <a class="el" href="struct_ort_custom_op.html">OrtCustomOp</a> *op)</td></tr>
 <tr class="memdesc:a667322624add60e555d44c5bbaba60d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a custom op to a custom op domain.  <a href="struct_ort_api.html#a667322624add60e555d44c5bbaba60d3">More...</a><br /></td></tr>
 <tr class="separator:a667322624add60e555d44c5bbaba60d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a111b23ef2a6fe29cd3fe2df7de8227ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a111b23ef2a6fe29cd3fe2df7de8227ec">ReleaseCustomOpDomain</a> (<a class="el" href="group___global.html#ga571f649a16d7052d4465ceabfdd26161">OrtCustomOpDomain</a> *input)</td></tr>
+<tr class="separator:a111b23ef2a6fe29cd3fe2df7de8227ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">OrtRunOptions</h2></td></tr>
 <tr class="memitem:a87ba125ce92a1ecfeb3135d85287edfd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a87ba125ce92a1ecfeb3135d85287edfd">CreateRunOptions</a> (<a class="el" href="group___global.html#ga8ff401e7d71d13c69b0e1f2320d44b26">OrtRunOptions</a> **out)</td></tr>
@@ -336,6 +354,8 @@ $(document).ready(function(){initNavTree('struct_ort_api.html',''); initResizabl
 <tr class="memitem:ae12dd88ad92784b52db5455901bc31fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#ae12dd88ad92784b52db5455901bc31fd">RunOptionsUnsetTerminate</a> (<a class="el" href="group___global.html#ga8ff401e7d71d13c69b0e1f2320d44b26">OrtRunOptions</a> *options)</td></tr>
 <tr class="memdesc:ae12dd88ad92784b52db5455901bc31fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the terminate flag.  <a href="struct_ort_api.html#ae12dd88ad92784b52db5455901bc31fd">More...</a><br /></td></tr>
 <tr class="separator:ae12dd88ad92784b52db5455901bc31fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab09e362ad76fa2d71f23d7860d5a851e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#ab09e362ad76fa2d71f23d7860d5a851e">ReleaseRunOptions</a> (<a class="el" href="group___global.html#ga8ff401e7d71d13c69b0e1f2320d44b26">OrtRunOptions</a> *input)</td></tr>
+<tr class="separator:ab09e362ad76fa2d71f23d7860d5a851e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f1045685fc54ddc63e4b05d73b85d24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a2f1045685fc54ddc63e4b05d73b85d24">AddRunConfigEntry</a> (<a class="el" href="group___global.html#ga8ff401e7d71d13c69b0e1f2320d44b26">OrtRunOptions</a> *options, const char *config_key, const char *config_value)</td></tr>
 <tr class="memdesc:a2f1045685fc54ddc63e4b05d73b85d24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a single run configuration entry as a pair of strings.  <a href="struct_ort_api.html#a2f1045685fc54ddc63e4b05d73b85d24">More...</a><br /></td></tr>
 <tr class="separator:a2f1045685fc54ddc63e4b05d73b85d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -386,6 +406,8 @@ $(document).ready(function(){initNavTree('struct_ort_api.html',''); initResizabl
 <tr class="memitem:aab40422beeb98330f90cf758eaba36a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#aab40422beeb98330f90cf758eaba36a7">GetOpaqueValue</a> (const char *domain_name, const char *type_name, const <a class="el" href="group___global.html#gaab167acf3fe9dabc0195b993fbe7ee7d">OrtValue</a> *in, void *data_container, size_t data_container_size)</td></tr>
 <tr class="memdesc:aab40422beeb98330f90cf758eaba36a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get internal data from a opaque (custom user defined type) OrtVAlue.  <a href="struct_ort_api.html#aab40422beeb98330f90cf758eaba36a7">More...</a><br /></td></tr>
 <tr class="separator:aab40422beeb98330f90cf758eaba36a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a426f5df37bf3edfe76f51babd38c351d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a426f5df37bf3edfe76f51babd38c351d">ReleaseValue</a> (<a class="el" href="group___global.html#gaab167acf3fe9dabc0195b993fbe7ee7d">OrtValue</a> *input)</td></tr>
+<tr class="separator:a426f5df37bf3edfe76f51babd38c351d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d09b444592183dab260b4d4920ce53d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a2d09b444592183dab260b4d4920ce53d">GetStringTensorElementLength</a> (const <a class="el" href="group___global.html#gaab167acf3fe9dabc0195b993fbe7ee7d">OrtValue</a> *value, size_t index, size_t *out)</td></tr>
 <tr class="memdesc:a2d09b444592183dab260b4d4920ce53d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the length of a single string in a string tensor.  <a href="struct_ort_api.html#a2d09b444592183dab260b4d4920ce53d">More...</a><br /></td></tr>
 <tr class="separator:a2d09b444592183dab260b4d4920ce53d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -434,6 +456,8 @@ $(document).ready(function(){initNavTree('struct_ort_api.html',''); initResizabl
 <tr class="memitem:a50d7f38cb7ffbf0e7752b12d9d7fc25a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a50d7f38cb7ffbf0e7752b12d9d7fc25a">GetOnnxTypeFromTypeInfo</a> (const <a class="el" href="group___global.html#ga651ed4317ee24a2fb83ae63dd03687b2">OrtTypeInfo</a> *type_info, enum <a class="el" href="group___global.html#gaba5b3718087699f596432d5649b9a28d">ONNXType</a> *out)</td></tr>
 <tr class="memdesc:a50d7f38cb7ffbf0e7752b12d9d7fc25a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get OnnxType from OrtTypeInfo.  <a href="struct_ort_api.html#a50d7f38cb7ffbf0e7752b12d9d7fc25a">More...</a><br /></td></tr>
 <tr class="separator:a50d7f38cb7ffbf0e7752b12d9d7fc25a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac15270345d9e9d8b5829e7db6c24fb6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#ac15270345d9e9d8b5829e7db6c24fb6e">ReleaseTypeInfo</a> (<a class="el" href="group___global.html#ga651ed4317ee24a2fb83ae63dd03687b2">OrtTypeInfo</a> *input)</td></tr>
+<tr class="separator:ac15270345d9e9d8b5829e7db6c24fb6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5496cb1f6cd12af30b03dbd8b0060dd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a5496cb1f6cd12af30b03dbd8b0060dd3">GetDenotationFromTypeInfo</a> (const <a class="el" href="group___global.html#ga651ed4317ee24a2fb83ae63dd03687b2">OrtTypeInfo</a> *type_info, const char **const denotation, size_t *len)</td></tr>
 <tr class="memdesc:a5496cb1f6cd12af30b03dbd8b0060dd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get denotation from type information.  <a href="struct_ort_api.html#a5496cb1f6cd12af30b03dbd8b0060dd3">More...</a><br /></td></tr>
 <tr class="separator:a5496cb1f6cd12af30b03dbd8b0060dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -469,6 +493,8 @@ $(document).ready(function(){initNavTree('struct_ort_api.html',''); initResizabl
 <tr class="memitem:a3fa295b4b7595d3cb6bf168551093acb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a3fa295b4b7595d3cb6bf168551093acb">GetTensorShapeElementCount</a> (const <a class="el" href="group___global.html#ga6af32c548904330b6bd7e8cba6e186c1">OrtTensorTypeAndShapeInfo</a> *info, size_t *out)</td></tr>
 <tr class="memdesc:a3fa295b4b7595d3cb6bf168551093acb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get total number of elements in a tensor shape from an OrtTensorTypeAndShapeInfo.  <a href="struct_ort_api.html#a3fa295b4b7595d3cb6bf168551093acb">More...</a><br /></td></tr>
 <tr class="separator:a3fa295b4b7595d3cb6bf168551093acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2c90c4d81d864db2cd955de5853fb8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#ac2c90c4d81d864db2cd955de5853fb8c">ReleaseTensorTypeAndShapeInfo</a> (<a class="el" href="group___global.html#ga6af32c548904330b6bd7e8cba6e186c1">OrtTensorTypeAndShapeInfo</a> *input)</td></tr>
+<tr class="separator:ac2c90c4d81d864db2cd955de5853fb8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">OrtMemoryInfo</h2></td></tr>
 <tr class="memitem:a5b666b746c52eaf54b41bf0c99d88cd1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a5b666b746c52eaf54b41bf0c99d88cd1">CreateMemoryInfo</a> (const char *name, enum <a class="el" href="group___global.html#ga5b765504a386db304d59e999de9bd1d6">OrtAllocatorType</a> type, int id, enum <a class="el" href="group___global.html#gab7805016f4b26871e899a3cf4114ee0d">OrtMemType</a> mem_type, <a class="el" href="group___global.html#ga088f45e429651ac29b4a9efb4d88571a">OrtMemoryInfo</a> **out)</td></tr>
@@ -489,6 +515,8 @@ $(document).ready(function(){initNavTree('struct_ort_api.html',''); initResizabl
 <tr class="separator:aa65c4934ba4d9e67fa36346ea11abb69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a427601d9b0c837b146f477d17888c4c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a427601d9b0c837b146f477d17888c4c3">MemoryInfoGetType</a> (const <a class="el" href="group___global.html#ga088f45e429651ac29b4a9efb4d88571a">OrtMemoryInfo</a> *ptr, <a class="el" href="group___global.html#ga5b765504a386db304d59e999de9bd1d6">OrtAllocatorType</a> *out)</td></tr>
 <tr class="separator:a427601d9b0c837b146f477d17888c4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62f73350760cf7cc483216ac44222d0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a62f73350760cf7cc483216ac44222d0b">ReleaseMemoryInfo</a> (<a class="el" href="group___global.html#ga088f45e429651ac29b4a9efb4d88571a">OrtMemoryInfo</a> *input)</td></tr>
+<tr class="separator:a62f73350760cf7cc483216ac44222d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">OrtAllocator</h2></td></tr>
 <tr class="memitem:a4d96c94be1f21c119afd2fadd81cb613"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a4d96c94be1f21c119afd2fadd81cb613">AllocatorAlloc</a> (<a class="el" href="struct_ort_allocator.html">OrtAllocator</a> *ptr, size_t size, void **out)</td></tr>
@@ -506,6 +534,12 @@ $(document).ready(function(){initNavTree('struct_ort_api.html',''); initResizabl
 <tr class="memitem:a32f86964e43bf64110d3ed9d6db1befc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a32f86964e43bf64110d3ed9d6db1befc">ReleaseAllocator</a> (<a class="el" href="struct_ort_allocator.html">OrtAllocator</a> *input)</td></tr>
 <tr class="memdesc:a32f86964e43bf64110d3ed9d6db1befc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release an <a class="el" href="struct_ort_allocator.html">OrtAllocator</a> obtained from <a class="el" href="struct_ort_api.html#ad3aabe6f82aa81b75048a4bdf937d974" title="Create an allocator for an OrtSession following an OrtMemoryInfo.">OrtApi::CreateAllocator</a>.  <a href="struct_ort_api.html#a32f86964e43bf64110d3ed9d6db1befc">More...</a><br /></td></tr>
 <tr class="separator:a32f86964e43bf64110d3ed9d6db1befc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39b702897cc61157248ffde413b14b9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a39b702897cc61157248ffde413b14b9d">RegisterAllocator</a> (<a class="el" href="group___global.html#gaba9072a64b5081cd4d36cca5ef92bd08">OrtEnv</a> *env, <a class="el" href="struct_ort_allocator.html">OrtAllocator</a> *allocator)</td></tr>
+<tr class="memdesc:a39b702897cc61157248ffde413b14b9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a custom allocator.  <a href="struct_ort_api.html#a39b702897cc61157248ffde413b14b9d">More...</a><br /></td></tr>
+<tr class="separator:a39b702897cc61157248ffde413b14b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafc0689965f283aba9fd21ebbddd09c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#aafc0689965f283aba9fd21ebbddd09c6">UnregisterAllocator</a> (<a class="el" href="group___global.html#gaba9072a64b5081cd4d36cca5ef92bd08">OrtEnv</a> *env, const <a class="el" href="group___global.html#ga088f45e429651ac29b4a9efb4d88571a">OrtMemoryInfo</a> *mem_info)</td></tr>
+<tr class="memdesc:aafc0689965f283aba9fd21ebbddd09c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a custom allocator.  <a href="struct_ort_api.html#aafc0689965f283aba9fd21ebbddd09c6">More...</a><br /></td></tr>
+<tr class="separator:aafc0689965f283aba9fd21ebbddd09c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">OrtKernelInfo</h2></td></tr>
 <tr class="memitem:a08bfa793efe58ade14b978acab913b4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a08bfa793efe58ade14b978acab913b4d">KernelInfoGetAttribute_float</a> (const <a class="el" href="group___global.html#ga0dc9b747ee56ed963beb424a48ed6b8b">OrtKernelInfo</a> *info, const char *name, float *out)</td></tr>
@@ -532,32 +566,6 @@ $(document).ready(function(){initNavTree('struct_ort_api.html',''); initResizabl
 <tr class="memdesc:a015bfc4d579272ff31d91843c43a3e6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch an array of int64_t values stored as an attribute in the graph node.  <a href="struct_ort_api.html#a015bfc4d579272ff31d91843c43a3e6d">More...</a><br /></td></tr>
 <tr class="separator:a015bfc4d579272ff31d91843c43a3e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Release Types</h2></td></tr>
-<tr class="memitem:a5edc51815e9aeba83516e4fe55ef836a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a5edc51815e9aeba83516e4fe55ef836a">ReleaseEnv</a> (<a class="el" href="group___global.html#gaba9072a64b5081cd4d36cca5ef92bd08">OrtEnv</a> *input)</td></tr>
-<tr class="separator:a5edc51815e9aeba83516e4fe55ef836a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b21334e290855a585f53d53dda44551"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a9b21334e290855a585f53d53dda44551">ReleaseStatus</a> (<a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *input)</td></tr>
-<tr class="separator:a9b21334e290855a585f53d53dda44551"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62f73350760cf7cc483216ac44222d0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a62f73350760cf7cc483216ac44222d0b">ReleaseMemoryInfo</a> (<a class="el" href="group___global.html#ga088f45e429651ac29b4a9efb4d88571a">OrtMemoryInfo</a> *input)</td></tr>
-<tr class="separator:a62f73350760cf7cc483216ac44222d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae311be14b0e35ce3ad3bc1418a79d7bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#ae311be14b0e35ce3ad3bc1418a79d7bb">ReleaseSession</a> (<a class="el" href="group___global.html#ga5220ca3b3f0a31a01a3f15057c35cac6">OrtSession</a> *input)</td></tr>
-<tr class="separator:ae311be14b0e35ce3ad3bc1418a79d7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a426f5df37bf3edfe76f51babd38c351d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a426f5df37bf3edfe76f51babd38c351d">ReleaseValue</a> (<a class="el" href="group___global.html#gaab167acf3fe9dabc0195b993fbe7ee7d">OrtValue</a> *input)</td></tr>
-<tr class="separator:a426f5df37bf3edfe76f51babd38c351d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab09e362ad76fa2d71f23d7860d5a851e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#ab09e362ad76fa2d71f23d7860d5a851e">ReleaseRunOptions</a> (<a class="el" href="group___global.html#ga8ff401e7d71d13c69b0e1f2320d44b26">OrtRunOptions</a> *input)</td></tr>
-<tr class="separator:ab09e362ad76fa2d71f23d7860d5a851e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac15270345d9e9d8b5829e7db6c24fb6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#ac15270345d9e9d8b5829e7db6c24fb6e">ReleaseTypeInfo</a> (<a class="el" href="group___global.html#ga651ed4317ee24a2fb83ae63dd03687b2">OrtTypeInfo</a> *input)</td></tr>
-<tr class="separator:ac15270345d9e9d8b5829e7db6c24fb6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2c90c4d81d864db2cd955de5853fb8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#ac2c90c4d81d864db2cd955de5853fb8c">ReleaseTensorTypeAndShapeInfo</a> (<a class="el" href="group___global.html#ga6af32c548904330b6bd7e8cba6e186c1">OrtTensorTypeAndShapeInfo</a> *input)</td></tr>
-<tr class="separator:ac2c90c4d81d864db2cd955de5853fb8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fa11d21f36cbd068a82682ea175d774"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a2fa11d21f36cbd068a82682ea175d774">ReleaseSessionOptions</a> (<a class="el" href="group___global.html#gaa6c56bcb36e39611481a17065d3ce620">OrtSessionOptions</a> *input)</td></tr>
-<tr class="separator:a2fa11d21f36cbd068a82682ea175d774"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a111b23ef2a6fe29cd3fe2df7de8227ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a111b23ef2a6fe29cd3fe2df7de8227ec">ReleaseCustomOpDomain</a> (<a class="el" href="group___global.html#ga571f649a16d7052d4465ceabfdd26161">OrtCustomOpDomain</a> *input)</td></tr>
-<tr class="separator:a111b23ef2a6fe29cd3fe2df7de8227ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b7cfcd4c68ec46481f29723320c45b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a8b7cfcd4c68ec46481f29723320c45b0">ReleaseMapTypeInfo</a> (<a class="el" href="group___global.html#gac87280b8593f74df62181b124d9a790d">OrtMapTypeInfo</a> *input)</td></tr>
-<tr class="separator:a8b7cfcd4c68ec46481f29723320c45b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18817a939f01079aff6682558b0dc401"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a18817a939f01079aff6682558b0dc401">ReleaseSequenceTypeInfo</a> (<a class="el" href="group___global.html#ga3cf68e3a575b0330628f7955c4ec3388">OrtSequenceTypeInfo</a> *input)</td></tr>
-<tr class="separator:a18817a939f01079aff6682558b0dc401"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">OrtMapTypeInfo</h2></td></tr>
 <tr class="memitem:ab6b3a218e2c1e2c2e83a07a5d0b8e6cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#ab6b3a218e2c1e2c2e83a07a5d0b8e6cf">GetMapKeyType</a> (const <a class="el" href="group___global.html#gac87280b8593f74df62181b124d9a790d">OrtMapTypeInfo</a> *map_type_info, enum <a class="el" href="group___global.html#gaec63cdda46c29b8183997f38930ce38e">ONNXTensorElementDataType</a> *out)</td></tr>
 <tr class="memdesc:ab6b3a218e2c1e2c2e83a07a5d0b8e6cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get key type from an OrtMapTypeInfo.  <a href="struct_ort_api.html#ab6b3a218e2c1e2c2e83a07a5d0b8e6cf">More...</a><br /></td></tr>
@@ -565,11 +573,15 @@ $(document).ready(function(){initNavTree('struct_ort_api.html',''); initResizabl
 <tr class="memitem:a8b7dec1975ce88636f0d77f89160eee3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a8b7dec1975ce88636f0d77f89160eee3">GetMapValueType</a> (const <a class="el" href="group___global.html#gac87280b8593f74df62181b124d9a790d">OrtMapTypeInfo</a> *map_type_info, <a class="el" href="group___global.html#ga651ed4317ee24a2fb83ae63dd03687b2">OrtTypeInfo</a> **type_info)</td></tr>
 <tr class="memdesc:a8b7dec1975ce88636f0d77f89160eee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value type from an <a class="el" href="group___global.html#gac87280b8593f74df62181b124d9a790d">OrtMapTypeInfo</a>.  <a href="struct_ort_api.html#a8b7dec1975ce88636f0d77f89160eee3">More...</a><br /></td></tr>
 <tr class="separator:a8b7dec1975ce88636f0d77f89160eee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b7cfcd4c68ec46481f29723320c45b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a8b7cfcd4c68ec46481f29723320c45b0">ReleaseMapTypeInfo</a> (<a class="el" href="group___global.html#gac87280b8593f74df62181b124d9a790d">OrtMapTypeInfo</a> *input)</td></tr>
+<tr class="separator:a8b7cfcd4c68ec46481f29723320c45b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">OrtSequenceTypeInfo</h2></td></tr>
 <tr class="memitem:a66d1082c98f5a76c3e47a2d92f3ed402"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a66d1082c98f5a76c3e47a2d92f3ed402">GetSequenceElementType</a> (const <a class="el" href="group___global.html#ga3cf68e3a575b0330628f7955c4ec3388">OrtSequenceTypeInfo</a> *sequence_type_info, <a class="el" href="group___global.html#ga651ed4317ee24a2fb83ae63dd03687b2">OrtTypeInfo</a> **type_info)</td></tr>
 <tr class="memdesc:a66d1082c98f5a76c3e47a2d92f3ed402"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get element type from an <a class="el" href="group___global.html#ga3cf68e3a575b0330628f7955c4ec3388">OrtSequenceTypeInfo</a>.  <a href="struct_ort_api.html#a66d1082c98f5a76c3e47a2d92f3ed402">More...</a><br /></td></tr>
 <tr class="separator:a66d1082c98f5a76c3e47a2d92f3ed402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18817a939f01079aff6682558b0dc401"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a18817a939f01079aff6682558b0dc401">ReleaseSequenceTypeInfo</a> (<a class="el" href="group___global.html#ga3cf68e3a575b0330628f7955c4ec3388">OrtSequenceTypeInfo</a> *input)</td></tr>
+<tr class="separator:a18817a939f01079aff6682558b0dc401"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">OrtModelMetadata</h2></td></tr>
 <tr class="memitem:af464cab463f2d4e0b34c6966374a99a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#af464cab463f2d4e0b34c6966374a99a9">ModelMetadataGetProducerName</a> (const <a class="el" href="group___global.html#ga60c3d77af832d0d7fa5e14636009b408">OrtModelMetadata</a> *model_metadata, <a class="el" href="struct_ort_allocator.html">OrtAllocator</a> *allocator, char **value)</td></tr>
@@ -640,19 +652,6 @@ $(document).ready(function(){initNavTree('struct_ort_api.html',''); initResizabl
 <tr class="memitem:a72a1b93e8f62021d758340e9c3a5de7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a72a1b93e8f62021d758340e9c3a5de7d">ReleasePrepackedWeightsContainer</a> (<a class="el" href="group___global.html#ga4b0ed31cf137ed2f763dddd2da40c2cf">OrtPrepackedWeightsContainer</a> *input)</td></tr>
 <tr class="memdesc:a72a1b93e8f62021d758340e9c3a5de7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release OrtPrepackedWeightsContainer instance.  <a href="struct_ort_api.html#a72a1b93e8f62021d758340e9c3a5de7d">More...</a><br /></td></tr>
 <tr class="separator:a72a1b93e8f62021d758340e9c3a5de7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">OrtTensorRTProviderOptionsV2</h2></td></tr>
-<tr class="memitem:aded45902af604f958176bec4792351c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#aded45902af604f958176bec4792351c0">CreateTensorRTProviderOptions</a> (<a class="el" href="group___global.html#ga331177427bd78a813d46a78f78f159a2">OrtTensorRTProviderOptionsV2</a> **out)</td></tr>
-<tr class="memdesc:aded45902af604f958176bec4792351c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an OrtTensorRTProviderOptionsV2.  <a href="struct_ort_api.html#aded45902af604f958176bec4792351c0">More...</a><br /></td></tr>
-<tr class="separator:aded45902af604f958176bec4792351c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0499e538e565039b4eb2769fdd3b26f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#ad0499e538e565039b4eb2769fdd3b26f">UpdateTensorRTProviderOptions</a> (<a class="el" href="group___global.html#ga331177427bd78a813d46a78f78f159a2">OrtTensorRTProviderOptionsV2</a> *tensorrt_options, const char *const *provider_options_keys, const char *const *provider_options_values, size_t num_keys)</td></tr>
-<tr class="memdesc:ad0499e538e565039b4eb2769fdd3b26f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set options in a TensorRT Execution Provider.  <a href="struct_ort_api.html#ad0499e538e565039b4eb2769fdd3b26f">More...</a><br /></td></tr>
-<tr class="separator:ad0499e538e565039b4eb2769fdd3b26f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a498cf13aa49e240d8c26871cf3f71337"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___global.html#gabbdf49d59489efef1b125d8e0d59adc6">OrtStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a498cf13aa49e240d8c26871cf3f71337">GetTensorRTProviderOptionsAsString</a> (const <a class="el" href="group___global.html#ga331177427bd78a813d46a78f78f159a2">OrtTensorRTProviderOptionsV2</a> *tensorrt_options, <a class="el" href="struct_ort_allocator.html">OrtAllocator</a> *allocator, char **ptr)</td></tr>
-<tr class="memdesc:a498cf13aa49e240d8c26871cf3f71337"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get serialized TensorRT provider options string.  <a href="struct_ort_api.html#a498cf13aa49e240d8c26871cf3f71337">More...</a><br /></td></tr>
-<tr class="separator:a498cf13aa49e240d8c26871cf3f71337"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bbd35ddc785254e6fa5a66a728ba99e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_api.html#a8bbd35ddc785254e6fa5a66a728ba99e">ReleaseTensorRTProviderOptionsV2</a> (<a class="el" href="group___global.html#ga331177427bd78a813d46a78f78f159a2">OrtTensorRTProviderOptionsV2</a> *input)</td></tr>
-<tr class="separator:a8bbd35ddc785254e6fa5a66a728ba99e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The C API. </p>
@@ -2585,7 +2584,7 @@ $(document).ready(function(){initNavTree('struct_ort_api.html',''); initResizabl
 <p>Create an OrtTensorRTProviderOptionsV2. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td>Newly created <a class="el" href="group___global.html#ga331177427bd78a813d46a78f78f159a2">OrtTensorRTProviderOptionsV2</a>. Must be released with <a class="el" href="struct_ort_api.html#a8bbd35ddc785254e6fa5a66a728ba99e">OrtApi::ReleaseTensorRTProviderOptionsV2</a></td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td>Newly created <a class="el" href="group___global.html#ga331177427bd78a813d46a78f78f159a2">OrtTensorRTProviderOptionsV2</a>. Must be released with <a class="el" href="struct_ort_api.html#ae17a8857260554d44bb2b27a67e39020" title="Release an OrtTensorRTProviderOptionsV2.">OrtApi::ReleaseTensorRTProviderOptions</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -6149,24 +6148,6 @@ $(document).ready(function(){initNavTree('struct_ort_api.html',''); initResizabl
 
 </div>
 </div>
-<a id="a8bbd35ddc785254e6fa5a66a728ba99e" name="a8bbd35ddc785254e6fa5a66a728ba99e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8bbd35ddc785254e6fa5a66a728ba99e">&#9670;&nbsp;</a></span>ReleaseTensorRTProviderOptionsV2()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OrtApi::ReleaseTensorRTProviderOptionsV2 </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group___global.html#ga331177427bd78a813d46a78f78f159a2">OrtTensorRTProviderOptionsV2</a> *&#160;</td>
-          <td class="paramname"><em>input</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ac2c90c4d81d864db2cd955de5853fb8c" name="ac2c90c4d81d864db2cd955de5853fb8c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac2c90c4d81d864db2cd955de5853fb8c">&#9670;&nbsp;</a></span>ReleaseTensorTypeAndShapeInfo()</h2>
 
@@ -8095,7 +8076,7 @@ $(document).ready(function(){initNavTree('struct_ort_api.html',''); initResizabl
 </div><div class="memdoc">
 
 <p>Set options in a TensorRT Execution Provider. </p>
-<p >Please refer to <a href="https://www.onnxruntime.ai/docs/reference/execution-providers/TensorRT-ExecutionProvider.html#c-api-example">https://www.onnxruntime.ai/docs/reference/execution-providers/TensorRT-ExecutionProvider.html#c-api-example</a> to know the available keys and values. Key should be in null terminated string format of the member of <a class="el" href="struct_ort_tensor_r_t_provider_options.html" title="TensorRT Provider Options.">OrtTensorRTProviderOptions</a> and value should be its related range.</p>
+<p >Please refer to <a href="https://www.onnxruntime.ai/docs/reference/execution-providers/TensorRT-ExecutionProvider.html#c-api-example">https://www.onnxruntime.ai/docs/reference/execution-providers/TensorRT-ExecutionProvider.html#c-api-example</a> to know the available keys and values. Key should be in null terminated string format of the member of <a class="el" href="group___global.html#ga331177427bd78a813d46a78f78f159a2">OrtTensorRTProviderOptionsV2</a> and value should be its related range.</p>
 <p >For example, key="trt_max_workspace_size" and value="2147483648"</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -8367,6 +8348,23 @@ $(document).ready(function(){initNavTree('struct_ort_api.html',''); initResizabl
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The error message inside the <code>status</code>. Do not free the returned value. </dd></dl>
+
+</div>
+</div>
+<a id="ae17a8857260554d44bb2b27a67e39020" name="ae17a8857260554d44bb2b27a67e39020"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae17a8857260554d44bb2b27a67e39020">&#9670;&nbsp;</a></span>ReleaseTensorRTProviderOptions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void( * OrtApi::ReleaseTensorRTProviderOptions) (<a class="el" href="group___global.html#ga331177427bd78a813d46a78f78f159a2">OrtTensorRTProviderOptionsV2</a> *input)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Release an <a class="el" href="group___global.html#ga331177427bd78a813d46a78f78f159a2">OrtTensorRTProviderOptionsV2</a>. </p>
+<dl class="section note"><dt>Note</dt><dd>This is an exception in the naming convention of other Release* functions, as the name of the method does not have the V2 suffix, but the type does </dd></dl>
 
 </div>
 </div>

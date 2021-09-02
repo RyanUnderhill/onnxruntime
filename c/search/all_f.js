@@ -18,7 +18,7 @@ var searchData=
   ['releasesession_15',['ReleaseSession',['../struct_ort_api.html#ae311be14b0e35ce3ad3bc1418a79d7bb',1,'OrtApi']]],
   ['releasesessionoptions_16',['ReleaseSessionOptions',['../struct_ort_api.html#a2fa11d21f36cbd068a82682ea175d774',1,'OrtApi']]],
   ['releasestatus_17',['ReleaseStatus',['../struct_ort_api.html#a9b21334e290855a585f53d53dda44551',1,'OrtApi']]],
-  ['releasetensorrtprovideroptionsv2_18',['ReleaseTensorRTProviderOptionsV2',['../struct_ort_api.html#a8bbd35ddc785254e6fa5a66a728ba99e',1,'OrtApi']]],
+  ['releasetensorrtprovideroptions_18',['ReleaseTensorRTProviderOptions',['../struct_ort_api.html#ae17a8857260554d44bb2b27a67e39020',1,'OrtApi']]],
   ['releasetensortypeandshapeinfo_19',['ReleaseTensorTypeAndShapeInfo',['../struct_ort_api.html#ac2c90c4d81d864db2cd955de5853fb8c',1,'OrtApi::ReleaseTensorTypeAndShapeInfo()'],['../struct_ort_1_1_custom_op_api.html#a42981ee288830f4b60683bbd4a21627d',1,'Ort::CustomOpApi::ReleaseTensorTypeAndShapeInfo()']]],
   ['releasethreadingoptions_20',['ReleaseThreadingOptions',['../struct_ort_api.html#aa2053c5c5c1c91f1b32c43d8b0e087c6',1,'OrtApi']]],
   ['releasetypeinfo_21',['ReleaseTypeInfo',['../struct_ort_api.html#ac15270345d9e9d8b5829e7db6c24fb6e',1,'OrtApi']]],

@@ -133,7 +133,6 @@ var struct_ort_api =
     [ "ReleaseSession", "struct_ort_api.html#ae311be14b0e35ce3ad3bc1418a79d7bb", null ],
     [ "ReleaseSessionOptions", "struct_ort_api.html#a2fa11d21f36cbd068a82682ea175d774", null ],
     [ "ReleaseStatus", "struct_ort_api.html#a9b21334e290855a585f53d53dda44551", null ],
-    [ "ReleaseTensorRTProviderOptionsV2", "struct_ort_api.html#a8bbd35ddc785254e6fa5a66a728ba99e", null ],
     [ "ReleaseTensorTypeAndShapeInfo", "struct_ort_api.html#ac2c90c4d81d864db2cd955de5853fb8c", null ],
     [ "ReleaseThreadingOptions", "struct_ort_api.html#aa2053c5c5c1c91f1b32c43d8b0e087c6", null ],
     [ "ReleaseTypeInfo", "struct_ort_api.html#ac15270345d9e9d8b5829e7db6c24fb6e", null ],
@@ -191,5 +190,6 @@ var struct_ort_api =
     [ "ClearBoundOutputs", "struct_ort_api.html#aa4431ee9e0a23179b9d1060d71cafbfd", null ],
     [ "CreateStatus", "struct_ort_api.html#ab3f31bf5a89fae003e5f57f27c1503f0", null ],
     [ "GetErrorCode", "struct_ort_api.html#afe84f6149c7dd0774c94b746b8edde36", null ],
-    [ "GetErrorMessage", "struct_ort_api.html#a8b5cc409efb4d7014998e169de144b7d", null ]
+    [ "GetErrorMessage", "struct_ort_api.html#a8b5cc409efb4d7014998e169de144b7d", null ],
+    [ "ReleaseTensorRTProviderOptions", "struct_ort_api.html#ae17a8857260554d44bb2b27a67e39020", null ]
 ];
