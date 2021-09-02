@@ -60,7 +60,7 @@ var searchData=
   ['getsparsetensorindices_57',['GetSparseTensorIndices',['../struct_ort_api.html#a933ed01b9637fdbe41fd56527879bce3',1,'OrtApi']]],
   ['getsparsetensorindicesdata_58',['GetSparseTensorIndicesData',['../struct_ort_1_1_value.html#a0eaf1f9f96f18194ead77ee855698503',1,'Ort::Value']]],
   ['getsparsetensorindicestypeshape_59',['GetSparseTensorIndicesTypeShape',['../struct_ort_api.html#a1ff38a970335ae69437af7ed2fdc53db',1,'OrtApi']]],
-  ['getsparsetensorindicestypeshapeinfo_60',['GetSparseTensorIndicesTypeShapeInfo',['../struct_ort_1_1_value.html#a04233987d2457529408a7e8b700a02b0',1,'Ort::Value']]],
+  ['getsparsetensorindicestypeshapeinfo_60',['GetSparseTensorIndicesTypeShapeInfo',['../struct_ort_1_1_value.html#a6fafbe9098011d60978cfe9f7c9b7083',1,'Ort::Value']]],
   ['getsparsetensorvalues_61',['GetSparseTensorValues',['../struct_ort_api.html#aff6ba9aa0a97a614a98bab6caa150977',1,'OrtApi::GetSparseTensorValues()'],['../struct_ort_1_1_value.html#af6f22b4c04a4b8182bf0b3c1da334c84',1,'Ort::Value::GetSparseTensorValues()']]],
   ['getsparsetensorvaluestypeandshape_62',['GetSparseTensorValuesTypeAndShape',['../struct_ort_api.html#ae15e62ba53b56dfce73eb6c350251b72',1,'OrtApi']]],
   ['getsparsetensorvaluestypeandshapeinfo_63',['GetSparseTensorValuesTypeAndShapeInfo',['../struct_ort_1_1_value.html#a8c671843b4a34071311d7d5ce7af38d9',1,'Ort::Value']]],

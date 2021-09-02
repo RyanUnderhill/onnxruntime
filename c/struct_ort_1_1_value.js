@@ -15,7 +15,7 @@ var struct_ort_1_1_value =
     [ "GetOpaqueData", "struct_ort_1_1_value.html#af8813a399df6e6576923c1c40d39c67e", null ],
     [ "GetSparseFormat", "struct_ort_1_1_value.html#afb0f62eb042c6bf25f023331fbf821f1", null ],
     [ "GetSparseTensorIndicesData", "struct_ort_1_1_value.html#a0eaf1f9f96f18194ead77ee855698503", null ],
-    [ "GetSparseTensorIndicesTypeShapeInfo", "struct_ort_1_1_value.html#a04233987d2457529408a7e8b700a02b0", null ],
+    [ "GetSparseTensorIndicesTypeShapeInfo", "struct_ort_1_1_value.html#a6fafbe9098011d60978cfe9f7c9b7083", null ],
     [ "GetSparseTensorValues", "struct_ort_1_1_value.html#af6f22b4c04a4b8182bf0b3c1da334c84", null ],
     [ "GetSparseTensorValuesTypeAndShapeInfo", "struct_ort_1_1_value.html#a8c671843b4a34071311d7d5ce7af38d9", null ],
     [ "GetStringTensorContent", "struct_ort_1_1_value.html#a50a029dee567f88be916994cc14da4b3", null ],

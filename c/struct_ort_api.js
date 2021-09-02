@@ -138,7 +138,7 @@ var struct_ort_api =
     [ "ReleaseThreadingOptions", "struct_ort_api.html#aa2053c5c5c1c91f1b32c43d8b0e087c6", null ],
     [ "ReleaseTypeInfo", "struct_ort_api.html#ac15270345d9e9d8b5829e7db6c24fb6e", null ],
     [ "ReleaseValue", "struct_ort_api.html#a426f5df37bf3edfe76f51babd38c351d", null ],
-    [ "Run", "struct_ort_api.html#acaa4ae0ec7b6e23200dee22c8589bc83", null ],
+    [ "Run", "struct_ort_api.html#af92db2cf801dd2294aea9a1d93f92cfd", null ],
     [ "RunOptionsGetRunLogSeverityLevel", "struct_ort_api.html#abbfc6327caf0186292694de136532fcc", null ],
     [ "RunOptionsGetRunLogVerbosityLevel", "struct_ort_api.html#afa26f96541d29374316a96d5148b0ec3", null ],
     [ "RunOptionsGetRunTag", "struct_ort_api.html#a52d30fe9129f77f9eb84df908d586899", null ],

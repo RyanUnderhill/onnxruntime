@@ -129,12 +129,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8c671843b4a34071311d7d5ce7af38d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_ort_1_1_tensor_type_and_shape_info.html">TensorTypeAndShapeInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_1_1_value.html#a8c671843b4a34071311d7d5ce7af38d9">GetSparseTensorValuesTypeAndShapeInfo</a> () const</td></tr>
 <tr class="memdesc:a8c671843b4a34071311d7d5ce7af38d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The API returns type and shape information for stored non-zero values of the sparse tensor. Use <a class="el" href="struct_ort_1_1_value.html#af6f22b4c04a4b8182bf0b3c1da334c84" title="The API returns a pointer to an internal buffer of the sparse tensor containing non-zero values....">GetSparseTensorValues()</a> to obtain values buffer pointer.  <a href="struct_ort_1_1_value.html#a8c671843b4a34071311d7d5ce7af38d9">More...</a><br /></td></tr>
 <tr class="separator:a8c671843b4a34071311d7d5ce7af38d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04233987d2457529408a7e8b700a02b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_ort_1_1_tensor_type_and_shape_info.html">TensorTypeAndShapeInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_1_1_value.html#a04233987d2457529408a7e8b700a02b0">GetSparseTensorIndicesTypeShapeInfo</a> (<a class="el" href="group___global.html#ga497c04502f658b896b265233fc890787">OrtSparseIndicesFormat</a>) const</td></tr>
-<tr class="memdesc:a04233987d2457529408a7e8b700a02b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The API returns type and shape information for the specified indices. Each supported indices have their own enum values even if a give format has more than one kind of indices. Use <a class="el" href="struct_ort_1_1_value.html#a0eaf1f9f96f18194ead77ee855698503" title="The API retrieves a pointer to the internal indices buffer. The API merely performs a convenience dat...">GetSparseTensorIndicesData()</a> to obtain pointer to indices buffer.  <a href="struct_ort_1_1_value.html#a04233987d2457529408a7e8b700a02b0">More...</a><br /></td></tr>
-<tr class="separator:a04233987d2457529408a7e8b700a02b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fafbe9098011d60978cfe9f7c9b7083"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_ort_1_1_tensor_type_and_shape_info.html">TensorTypeAndShapeInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_1_1_value.html#a6fafbe9098011d60978cfe9f7c9b7083">GetSparseTensorIndicesTypeShapeInfo</a> (<a class="el" href="group___global.html#ga497c04502f658b896b265233fc890787">OrtSparseIndicesFormat</a> format) const</td></tr>
+<tr class="memdesc:a6fafbe9098011d60978cfe9f7c9b7083"><td class="mdescLeft">&#160;</td><td class="mdescRight">The API returns type and shape information for the specified indices. Each supported indices have their own enum values even if a give format has more than one kind of indices. Use <a class="el" href="struct_ort_1_1_value.html#a0eaf1f9f96f18194ead77ee855698503" title="The API retrieves a pointer to the internal indices buffer. The API merely performs a convenience dat...">GetSparseTensorIndicesData()</a> to obtain pointer to indices buffer.  <a href="struct_ort_1_1_value.html#a6fafbe9098011d60978cfe9f7c9b7083">More...</a><br /></td></tr>
+<tr class="separator:a6fafbe9098011d60978cfe9f7c9b7083"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0eaf1f9f96f18194ead77ee855698503"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a0eaf1f9f96f18194ead77ee855698503"><td class="memTemplItemLeft" align="right" valign="top">const T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_ort_1_1_value.html#a0eaf1f9f96f18194ead77ee855698503">GetSparseTensorIndicesData</a> (<a class="el" href="group___global.html#ga497c04502f658b896b265233fc890787">OrtSparseIndicesFormat</a> indices_format, size_t &amp;num_indices) const</td></tr>
-<tr class="memdesc:a0eaf1f9f96f18194ead77ee855698503"><td class="mdescLeft">&#160;</td><td class="mdescRight">The API retrieves a pointer to the internal indices buffer. The API merely performs a convenience data type casting on the return type pointer. Make sure you are requesting the right type, use <a class="el" href="struct_ort_1_1_value.html#a04233987d2457529408a7e8b700a02b0" title="The API returns type and shape information for the specified indices. Each supported indices have the...">GetSparseTensorIndicesTypeShapeInfo()</a>;  <a href="struct_ort_1_1_value.html#a0eaf1f9f96f18194ead77ee855698503">More...</a><br /></td></tr>
+<tr class="memdesc:a0eaf1f9f96f18194ead77ee855698503"><td class="mdescLeft">&#160;</td><td class="mdescRight">The API retrieves a pointer to the internal indices buffer. The API merely performs a convenience data type casting on the return type pointer. Make sure you are requesting the right type, use <a class="el" href="struct_ort_1_1_value.html#a6fafbe9098011d60978cfe9f7c9b7083" title="The API returns type and shape information for the specified indices. Each supported indices have the...">GetSparseTensorIndicesTypeShapeInfo()</a>;  <a href="struct_ort_1_1_value.html#a0eaf1f9f96f18194ead77ee855698503">More...</a><br /></td></tr>
 <tr class="separator:a0eaf1f9f96f18194ead77ee855698503"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8813a399df6e6576923c1c40d39c67e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:af8813a399df6e6576923c1c40d39c67e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_ort_1_1_value.html#af8813a399df6e6576923c1c40d39c67e">GetOpaqueData</a> (const char *domain, const char *type_name, T &amp;) const</td></tr>
@@ -1253,7 +1253,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>The API retrieves a pointer to the internal indices buffer. The API merely performs a convenience data type casting on the return type pointer. Make sure you are requesting the right type, use <a class="el" href="struct_ort_1_1_value.html#a04233987d2457529408a7e8b700a02b0" title="The API returns type and shape information for the specified indices. Each supported indices have the...">GetSparseTensorIndicesTypeShapeInfo()</a>; </p>
+<p>The API retrieves a pointer to the internal indices buffer. The API merely performs a convenience data type casting on the return type pointer. Make sure you are requesting the right type, use <a class="el" href="struct_ort_1_1_value.html#a6fafbe9098011d60978cfe9f7c9b7083" title="The API returns type and shape information for the specified indices. Each supported indices have the...">GetSparseTensorIndicesTypeShapeInfo()</a>; </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>type to cast to</td></tr>
@@ -1271,8 +1271,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a04233987d2457529408a7e8b700a02b0" name="a04233987d2457529408a7e8b700a02b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04233987d2457529408a7e8b700a02b0">&#9670;&nbsp;</a></span>GetSparseTensorIndicesTypeShapeInfo()</h2>
+<a id="a6fafbe9098011d60978cfe9f7c9b7083" name="a6fafbe9098011d60978cfe9f7c9b7083"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fafbe9098011d60978cfe9f7c9b7083">&#9670;&nbsp;</a></span>GetSparseTensorIndicesTypeShapeInfo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1281,14 +1281,19 @@ template&lt;typename T &gt; </div>
           <td class="memname"><a class="el" href="struct_ort_1_1_tensor_type_and_shape_info.html">TensorTypeAndShapeInfo</a> Ort::Value::GetSparseTensorIndicesTypeShapeInfo </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group___global.html#ga497c04502f658b896b265233fc890787">OrtSparseIndicesFormat</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>format</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>The API returns type and shape information for the specified indices. Each supported indices have their own enum values even if a give format has more than one kind of indices. Use <a class="el" href="struct_ort_1_1_value.html#a0eaf1f9f96f18194ead77ee855698503" title="The API retrieves a pointer to the internal indices buffer. The API merely performs a convenience dat...">GetSparseTensorIndicesData()</a> to obtain pointer to indices buffer. </p>
-<p >enum requested</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">format</td><td>enum requested</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>type and shape information</dd></dl>
 
 </div>
