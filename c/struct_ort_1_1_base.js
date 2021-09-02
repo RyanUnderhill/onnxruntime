@@ -9,8 +9,8 @@ var struct_ort_1_1_base =
     [ "operator const T *", "struct_ort_1_1_base.html#a82c7f161984cf2803c17ae85bbd66176", null ],
     [ "operator T*", "struct_ort_1_1_base.html#a4b1270f1fe2a1242d89ad7ff31ea0523", null ],
     [ "operator=", "struct_ort_1_1_base.html#ae1c3f4684de3e03acecaefd82b5e516b", null ],
-    [ "operator=", "struct_ort_1_1_base.html#a4d657c57ee9193fa6c6076d63107481f", null ],
-    [ "release", "struct_ort_1_1_base.html#aafefffd571932800794065875e78369d", null ],
+    [ "operator=", "struct_ort_1_1_base.html#a2517f75e3511fd84579f99502bf39b1e", null ],
+    [ "release", "struct_ort_1_1_base.html#a2f4ae170cb8adebc982cb2dea39325c9", null ],
     [ "Unowned", "struct_ort_1_1_base.html#ae79c91592c8c7e55b5b8bc0b6076dc35", null ],
     [ "p_", "struct_ort_1_1_base.html#ab6424ea36bd85db866473e004a6915e5", null ]
 ];

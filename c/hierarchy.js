@@ -64,7 +64,9 @@ var hierarchy =
     ] ],
     [ "OrtOpenVINOProviderOptions", "struct_ort_open_v_i_n_o_provider_options.html", null ],
     [ "OrtROCMProviderOptions", "struct_ort_r_o_c_m_provider_options.html", null ],
+    [ "Ort::Value::OrtSparseValuesParam", "struct_ort_1_1_value_1_1_ort_sparse_values_param.html", null ],
     [ "OrtTensorRTProviderOptions", "struct_ort_tensor_r_t_provider_options.html", null ],
+    [ "Ort::Value::Shape", "struct_ort_1_1_value_1_1_shape.html", null ],
     [ "T", null, [
       [ "Ort::Unowned< T >", "struct_ort_1_1_unowned.html", null ]
     ] ]

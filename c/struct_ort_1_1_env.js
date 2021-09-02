@@ -6,7 +6,7 @@ var struct_ort_1_1_env =
     [ "Env", "struct_ort_1_1_env.html#aacb1c1fec39c545a180c5c9b8fe37fb5", null ],
     [ "Env", "struct_ort_1_1_env.html#a8b41eadfdbb6998e5d4307318bca8033", null ],
     [ "Env", "struct_ort_1_1_env.html#a25b49a5a089206ead63150b4e246bdbe", null ],
-    [ "CreateAndRegisterAllocator", "struct_ort_1_1_env.html#a2a30a3c29e0be70c514e8f96839ddf66", null ],
-    [ "DisableTelemetryEvents", "struct_ort_1_1_env.html#a68044c2804b07599314533449e6cf7b3", null ],
-    [ "EnableTelemetryEvents", "struct_ort_1_1_env.html#a9bb361d57f15f820efe930297c4cfffc", null ]
+    [ "CreateAndRegisterAllocator", "struct_ort_1_1_env.html#ace62e9a1fe461a42a0b1cc79ee40f421", null ],
+    [ "DisableTelemetryEvents", "struct_ort_1_1_env.html#afc9b2d44c9db7812787904d5e3018f24", null ],
+    [ "EnableTelemetryEvents", "struct_ort_1_1_env.html#a251b84b1a06a0d5f3f1cfa0d2591c033", null ]
 ];

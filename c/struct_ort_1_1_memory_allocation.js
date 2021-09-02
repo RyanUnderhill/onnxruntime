@@ -4,8 +4,8 @@ var struct_ort_1_1_memory_allocation =
     [ "~MemoryAllocation", "struct_ort_1_1_memory_allocation.html#a668c96690c510873dd2a66b3d2819405", null ],
     [ "MemoryAllocation", "struct_ort_1_1_memory_allocation.html#a9f1fccffe728b743aaf5de046f45b3ae", null ],
     [ "MemoryAllocation", "struct_ort_1_1_memory_allocation.html#a07e6b48d0ceba7fd7498c1e441ec87a9", null ],
-    [ "get", "struct_ort_1_1_memory_allocation.html#aed866f46629788f4a044f313be00f4aa", null ],
-    [ "operator=", "struct_ort_1_1_memory_allocation.html#a67894a6b408e064cddd7d60addf3f6df", null ],
-    [ "operator=", "struct_ort_1_1_memory_allocation.html#a8e2e65f0636105db1735df51be1cd841", null ],
+    [ "get", "struct_ort_1_1_memory_allocation.html#a42a142a6fb7abd3fa8ca04332cf924d6", null ],
+    [ "operator=", "struct_ort_1_1_memory_allocation.html#a0ab8a17a34f5db87320088c4ad0081f4", null ],
+    [ "operator=", "struct_ort_1_1_memory_allocation.html#aef9695cd978aa505546ef46c98e32894", null ],
     [ "size", "struct_ort_1_1_memory_allocation.html#aedec2ec4928b1a6c7dbfd0d33dc87caf", null ]
 ];

@@ -1,13 +1,13 @@
 var searchData=
 [
-  ['kernelcontext_5fgetinput_680',['KernelContext_GetInput',['../struct_ort_api.html#adb1c0b0121d0afc6ff131426ca13301b',1,'OrtApi::KernelContext_GetInput()'],['../struct_ort_1_1_custom_op_api.html#a397c5d48c680ec19d4a8054737edbb0b',1,'Ort::CustomOpApi::KernelContext_GetInput()']]],
-  ['kernelcontext_5fgetinputcount_681',['KernelContext_GetInputCount',['../struct_ort_api.html#ada4a6a568e600881233753568c2cd42c',1,'OrtApi::KernelContext_GetInputCount()'],['../struct_ort_1_1_custom_op_api.html#a17348789cfde3e1a93bf1e2af67c183e',1,'Ort::CustomOpApi::KernelContext_GetInputCount()']]],
-  ['kernelcontext_5fgetoutput_682',['KernelContext_GetOutput',['../struct_ort_api.html#aa3a4eba79a6956ff3e40ef72909da1e8',1,'OrtApi::KernelContext_GetOutput()'],['../struct_ort_1_1_custom_op_api.html#a16c3daf29090a4169a03fe5c8b6c2bdb',1,'Ort::CustomOpApi::KernelContext_GetOutput()']]],
-  ['kernelcontext_5fgetoutputcount_683',['KernelContext_GetOutputCount',['../struct_ort_api.html#a05aaa3152dd7b5013a26d8174c19efbb',1,'OrtApi::KernelContext_GetOutputCount()'],['../struct_ort_1_1_custom_op_api.html#a015cb844d1127a400228c2756892d453',1,'Ort::CustomOpApi::KernelContext_GetOutputCount(const OrtKernelContext *context)']]],
-  ['kernelinfogetattribute_684',['KernelInfoGetAttribute',['../struct_ort_1_1_custom_op_api.html#a47632080bea3d198cc8036e6c57a9288',1,'Ort::CustomOpApi']]],
-  ['kernelinfogetattribute_5ffloat_685',['KernelInfoGetAttribute_float',['../struct_ort_api.html#a3ce8570bfed0d47d3b0d0cb7fd34ab40',1,'OrtApi']]],
-  ['kernelinfogetattribute_5fint64_686',['KernelInfoGetAttribute_int64',['../struct_ort_api.html#a8c59e7ef1d261f5a30fa632b75a4c266',1,'OrtApi']]],
-  ['kernelinfogetattribute_5fstring_687',['KernelInfoGetAttribute_string',['../struct_ort_api.html#a9513422e0fc003d201d0e15a931a9422',1,'OrtApi']]],
-  ['kernelinfogetattributearray_5ffloat_688',['KernelInfoGetAttributeArray_float',['../struct_ort_api.html#a2154a9494029d1395d0c0a2389ee6da0',1,'OrtApi']]],
-  ['kernelinfogetattributearray_5fint64_689',['KernelInfoGetAttributeArray_int64',['../struct_ort_api.html#a9a41d039bfe06a270e6fad44233a7b1f',1,'OrtApi']]]
+  ['kernelcontext_5fgetinput_0',['KernelContext_GetInput',['../struct_ort_api.html#a7044ffbc7a1371da2fe1fa0649bc778b',1,'OrtApi::KernelContext_GetInput()'],['../struct_ort_1_1_custom_op_api.html#afa21769ea0c1dca10da330d4d4544baa',1,'Ort::CustomOpApi::KernelContext_GetInput()']]],
+  ['kernelcontext_5fgetinputcount_1',['KernelContext_GetInputCount',['../struct_ort_api.html#a5eb48d2c664424549250f3987a14a50e',1,'OrtApi::KernelContext_GetInputCount()'],['../struct_ort_1_1_custom_op_api.html#a17348789cfde3e1a93bf1e2af67c183e',1,'Ort::CustomOpApi::KernelContext_GetInputCount()']]],
+  ['kernelcontext_5fgetoutput_2',['KernelContext_GetOutput',['../struct_ort_api.html#a588deb2a1cd85f1a884856056671390e',1,'OrtApi::KernelContext_GetOutput()'],['../struct_ort_1_1_custom_op_api.html#a3ee901b1e84cc4c47221dc230d357b66',1,'Ort::CustomOpApi::KernelContext_GetOutput()']]],
+  ['kernelcontext_5fgetoutputcount_3',['KernelContext_GetOutputCount',['../struct_ort_api.html#a3f89dd3abc82713b02e4bd59457592e2',1,'OrtApi::KernelContext_GetOutputCount()'],['../struct_ort_1_1_custom_op_api.html#a015cb844d1127a400228c2756892d453',1,'Ort::CustomOpApi::KernelContext_GetOutputCount(const OrtKernelContext *context)']]],
+  ['kernelinfogetattribute_4',['KernelInfoGetAttribute',['../struct_ort_1_1_custom_op_api.html#a47632080bea3d198cc8036e6c57a9288',1,'Ort::CustomOpApi']]],
+  ['kernelinfogetattribute_5ffloat_5',['KernelInfoGetAttribute_float',['../struct_ort_api.html#a08bfa793efe58ade14b978acab913b4d',1,'OrtApi']]],
+  ['kernelinfogetattribute_5fint64_6',['KernelInfoGetAttribute_int64',['../struct_ort_api.html#afe5754068e5566b76aefc4af7436c3f8',1,'OrtApi']]],
+  ['kernelinfogetattribute_5fstring_7',['KernelInfoGetAttribute_string',['../struct_ort_api.html#a1df374f5aaea1f559dcfb13b59b0733b',1,'OrtApi']]],
+  ['kernelinfogetattributearray_5ffloat_8',['KernelInfoGetAttributeArray_float',['../struct_ort_api.html#a0daa62a3b78d175df17e9bb49f73b045',1,'OrtApi']]],
+  ['kernelinfogetattributearray_5fint64_9',['KernelInfoGetAttributeArray_int64',['../struct_ort_api.html#a015bfc4d579272ff31d91843c43a3e6d',1,'OrtApi']]]
 ];

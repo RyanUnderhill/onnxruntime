@@ -6,8 +6,8 @@ var struct_ort_1_1_io_binding =
     [ "BindOutput", "struct_ort_1_1_io_binding.html#ae3066c54eeab959922e88435f3762c2b", null ],
     [ "ClearBoundInputs", "struct_ort_1_1_io_binding.html#ade0e30c3727bf1eb4ccc8952fd8265ca", null ],
     [ "ClearBoundOutputs", "struct_ort_1_1_io_binding.html#ad4daf2e07456fd68ae0c8d4dcf4e8357", null ],
-    [ "GetOutputNames", "struct_ort_1_1_io_binding.html#a2af4d3976d7a21c01aa9f46da5bf56ea", null ],
-    [ "GetOutputNames", "struct_ort_1_1_io_binding.html#a897f14e07690b458ef51bb202cbb7c15", null ],
-    [ "GetOutputValues", "struct_ort_1_1_io_binding.html#a7878fa35cfc812db5e9c0ec2d38d1b59", null ],
-    [ "GetOutputValues", "struct_ort_1_1_io_binding.html#aeb9a08a5276e6a0d53c6b25acbf7dab2", null ]
+    [ "GetOutputNames", "struct_ort_1_1_io_binding.html#a74dd1e588e1fa13259823549ac4dd71b", null ],
+    [ "GetOutputNames", "struct_ort_1_1_io_binding.html#a95c306e1e6682e7462669f477ff4f65b", null ],
+    [ "GetOutputValues", "struct_ort_1_1_io_binding.html#a32f4ebbfc39913bb89afe7bf9af9c652", null ],
+    [ "GetOutputValues", "struct_ort_1_1_io_binding.html#a8cbf585065d10b9b2ad920b802c4b083", null ]
 ];

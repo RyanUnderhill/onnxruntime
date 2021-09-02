@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['disablecpumemarena_588',['DisableCpuMemArena',['../struct_ort_api.html#a5ab6d64dfbcc43a42d1811e8d7380f74',1,'OrtApi::DisableCpuMemArena()'],['../struct_ort_1_1_session_options.html#a72abafd8b854a04acdfdeb43720cb0bb',1,'Ort::SessionOptions::DisableCpuMemArena()']]],
-  ['disablemempattern_589',['DisableMemPattern',['../struct_ort_api.html#a8d5e95f90d7bac6fe5f040c2a3b615e0',1,'OrtApi::DisableMemPattern()'],['../struct_ort_1_1_session_options.html#a641a1cd133a4059ce53d205223f3928f',1,'Ort::SessionOptions::DisableMemPattern()']]],
-  ['disablepersessionthreads_590',['DisablePerSessionThreads',['../struct_ort_api.html#a35d8f75c0074444b0a37e0b117520d46',1,'OrtApi::DisablePerSessionThreads()'],['../struct_ort_1_1_session_options.html#a250dcecb2ba6dac981db8e2c7b94a64a',1,'Ort::SessionOptions::DisablePerSessionThreads()']]],
-  ['disableprofiling_591',['DisableProfiling',['../struct_ort_api.html#a41ccbc5c92b2c53adb454dee7da584de',1,'OrtApi::DisableProfiling()'],['../struct_ort_1_1_session_options.html#ac1a27ce82513e891bdbaa153a129d5a3',1,'Ort::SessionOptions::DisableProfiling()']]],
-  ['disabletelemetryevents_592',['DisableTelemetryEvents',['../struct_ort_api.html#a2501dac03a0be1040d4ca054a29451ce',1,'OrtApi::DisableTelemetryEvents()'],['../struct_ort_1_1_env.html#a68044c2804b07599314533449e6cf7b3',1,'Ort::Env::DisableTelemetryEvents()']]]
+  ['disablecpumemarena_0',['DisableCpuMemArena',['../struct_ort_api.html#aa2ec3fc24741cfc1024ebb25091dde71',1,'OrtApi::DisableCpuMemArena()'],['../struct_ort_1_1_session_options.html#abe5a3ec3c1c94a231f753311b43e9af8',1,'Ort::SessionOptions::DisableCpuMemArena()']]],
+  ['disablemempattern_1',['DisableMemPattern',['../struct_ort_api.html#ab090eb2a54f5dfaf0377a8cc72d65c5f',1,'OrtApi::DisableMemPattern()'],['../struct_ort_1_1_session_options.html#a85495cc117b54771cb4d7632753532f0',1,'Ort::SessionOptions::DisableMemPattern()']]],
+  ['disablepersessionthreads_2',['DisablePerSessionThreads',['../struct_ort_api.html#a65495e1a61a098089f6f987b41535743',1,'OrtApi::DisablePerSessionThreads()'],['../struct_ort_1_1_session_options.html#a2fe38d2468c0d7c5d27967bb9804ed7b',1,'Ort::SessionOptions::DisablePerSessionThreads()']]],
+  ['disableprofiling_3',['DisableProfiling',['../struct_ort_api.html#a0d89e3555264683e7893cd85e78bd55c',1,'OrtApi::DisableProfiling()'],['../struct_ort_1_1_session_options.html#a244fa67143794b5e1792824f55a86491',1,'Ort::SessionOptions::DisableProfiling()']]],
+  ['disabletelemetryevents_4',['DisableTelemetryEvents',['../struct_ort_api.html#a74a22efe6571fe538e60f677654ae01f',1,'OrtApi::DisableTelemetryEvents()'],['../struct_ort_1_1_env.html#afc9b2d44c9db7812787904d5e3018f24',1,'Ort::Env::DisableTelemetryEvents()']]]
 ];

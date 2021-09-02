@@ -6,6 +6,6 @@ var struct_ort_1_1_tensor_type_and_shape_info =
     [ "GetDimensionsCount", "struct_ort_1_1_tensor_type_and_shape_info.html#a6ebc72c10f10b400bbf53eee4b26e368", null ],
     [ "GetElementCount", "struct_ort_1_1_tensor_type_and_shape_info.html#ab7128aa311e84d2840e208d939d82630", null ],
     [ "GetElementType", "struct_ort_1_1_tensor_type_and_shape_info.html#a7ff0be82da5010986a5fecdc80786a71", null ],
-    [ "GetShape", "struct_ort_1_1_tensor_type_and_shape_info.html#a2e015cff5a2ee3ddad0c8d507e84ff2d", null ],
+    [ "GetShape", "struct_ort_1_1_tensor_type_and_shape_info.html#a4625a99a32e126b4b03a9289183fe723", null ],
     [ "GetSymbolicDimensions", "struct_ort_1_1_tensor_type_and_shape_info.html#aef76cb346e08340608fd21e89cc8eb8a", null ]
 ];
