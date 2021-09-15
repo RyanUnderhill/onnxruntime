@@ -90,20 +90,31 @@ $(document).ready(function(){initNavTree('struct_ort_allocator.html',''); initRe
 </div><!--header-->
 <div class="contents">
 
+<p>Memory allocation interface.  
+ <a href="struct_ort_allocator.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="onnxruntime__c__api_8h_source.html">onnxruntime_c_api.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a508b90a31a7aec4f3ccd3d875c750b64"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_allocator.html#a508b90a31a7aec4f3ccd3d875c750b64">version</a></td></tr>
+<tr class="memdesc:a508b90a31a7aec4f3ccd3d875c750b64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be initialized to ORT_API_VERSION.  <a href="struct_ort_allocator.html#a508b90a31a7aec4f3ccd3d875c750b64">More...</a><br /></td></tr>
 <tr class="separator:a508b90a31a7aec4f3ccd3d875c750b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2a68a69192b9650d9e0f0c6aeca2835"><td class="memItemLeft" align="right" valign="top">void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_allocator.html#aa2a68a69192b9650d9e0f0c6aeca2835">Alloc</a> )(struct <a class="el" href="struct_ort_allocator.html">OrtAllocator</a> *this_, size_t size)</td></tr>
+<tr class="memdesc:aa2a68a69192b9650d9e0f0c6aeca2835"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to an allocated block of <code>size</code> bytes.  <a href="struct_ort_allocator.html#aa2a68a69192b9650d9e0f0c6aeca2835">More...</a><br /></td></tr>
 <tr class="separator:aa2a68a69192b9650d9e0f0c6aeca2835"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18d7888327537d09c7d3411dff4ac86a"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_allocator.html#a18d7888327537d09c7d3411dff4ac86a">Free</a> )(struct <a class="el" href="struct_ort_allocator.html">OrtAllocator</a> *this_, void *p)</td></tr>
+<tr class="memdesc:a18d7888327537d09c7d3411dff4ac86a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free a block of memory previously allocated with <a class="el" href="struct_ort_allocator.html#aa2a68a69192b9650d9e0f0c6aeca2835" title="Returns a pointer to an allocated block of size bytes.">OrtAllocator::Alloc</a>.  <a href="struct_ort_allocator.html#a18d7888327537d09c7d3411dff4ac86a">More...</a><br /></td></tr>
 <tr class="separator:a18d7888327537d09c7d3411dff4ac86a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a494dba3878a087a806238922472a56d5"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="group___global.html#ga088f45e429651ac29b4a9efb4d88571a">OrtMemoryInfo</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ort_allocator.html#a494dba3878a087a806238922472a56d5">Info</a> )(const struct <a class="el" href="struct_ort_allocator.html">OrtAllocator</a> *this_)</td></tr>
+<tr class="memdesc:a494dba3878a087a806238922472a56d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to an <a class="el" href="group___global.html#ga088f45e429651ac29b4a9efb4d88571a">OrtMemoryInfo</a> that describes this allocator.  <a href="struct_ort_allocator.html#a494dba3878a087a806238922472a56d5">More...</a><br /></td></tr>
 <tr class="separator:a494dba3878a087a806238922472a56d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Memory allocation interface. </p>
+<p >Structure of function pointers that defines a memory allocator. This can be created and filled in by the user for custom allocators.</p>
+<p >When an allocator is passed to any function, be sure that the allocator object is not destroyed until the last allocated object using it is freed. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="aa2a68a69192b9650d9e0f0c6aeca2835" name="aa2a68a69192b9650d9e0f0c6aeca2835"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa2a68a69192b9650d9e0f0c6aeca2835">&#9670;&nbsp;</a></span>Alloc</h2>
 
@@ -115,6 +126,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns a pointer to an allocated block of <code>size</code> bytes. </p>
 
 </div>
 </div>
@@ -130,6 +143,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Free a block of memory previously allocated with <a class="el" href="struct_ort_allocator.html#aa2a68a69192b9650d9e0f0c6aeca2835" title="Returns a pointer to an allocated block of size bytes.">OrtAllocator::Alloc</a>. </p>
+
 </div>
 </div>
 <a id="a494dba3878a087a806238922472a56d5" name="a494dba3878a087a806238922472a56d5"></a>
@@ -144,6 +159,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return a pointer to an <a class="el" href="group___global.html#ga088f45e429651ac29b4a9efb4d88571a">OrtMemoryInfo</a> that describes this allocator. </p>
+
 </div>
 </div>
 <a id="a508b90a31a7aec4f3ccd3d875c750b64" name="a508b90a31a7aec4f3ccd3d875c750b64"></a>
@@ -157,6 +174,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Must be initialized to ORT_API_VERSION. </p>
 
 </div>
 </div>
